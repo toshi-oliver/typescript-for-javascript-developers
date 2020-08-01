@@ -11,6 +11,7 @@ class MyNumberCard {
   // owner(): string {
   //   return this._owner;
   // }
+
   get owner(): string {
     return this._owner;
   }
@@ -25,7 +26,10 @@ class MyNumberCard {
 }
 
 let card = new MyNumberCard('とし', 1233455);
-// console.log(card.owner());
+//TODO:ハムさんに質問
+//Q.11行目~13行目getを付与しない場合、呼び出しはconsole.log(card.owner())
+// 15行目~17行目getを付与する場合→呼び出しはconsole.log(card.owner)
+// getをつけると引数（）を加えないのはなぜか
 console.log(card.owner);
 console.log(card.debugPrint());
 card.secretNumber = 1111111;
